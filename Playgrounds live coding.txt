@@ -1,0 +1,43 @@
+First steps
+1. Have a project
+2. Save as workspace, this makes it simpler to give playground access to files
+3. File -> New Target -> Cocoa Touch Framework
+	- this is needed to get your files in your playgrounds
+4. Add files to framework. Add Functions
+5. Build
+
+Main
+1.
+import ImportantWorkProjectPlayground
+
+2.
+sayHello()
+
+*** ERROR!
+
+3.
+@testable import ImportantWorkProjectPlayground
+
+Home
+
+1.
+@testable import ImportantWorkProjectPlayground
+import PlaygroundSupport
+
+2. try
+
+let homeVC = HomeViewController()
+
+PlaygroundPage.current.liveView = homeVC.view
+
+*** suddenly an error? nil?
+
+3.
+let homeVC = HomeViewController(nibName: nil, bundle: Bundle.projectFramework)
+
+*** works, but no images!
+
+4. Home View Controller
+        if let image = UIImage(named: name, in: Bundle(for: type(of: self)), compatibleWith: nil) {
+
+^ I don't like this.

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%d min(s) ago</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@mins@</string>
+		<key>mins</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>zd</string>
+			<key>zero</key>
+			<string>Just now</string>
+			<key>one</key>
+			<string>1 min ago</string>
+			<key>two</key>
+			<string></string>
+			<key>few</key>
+			<string></string>
+			<key>many</key>
+			<string></string>
+			<key>other</key>
+			<string>%d mins ago</string>
+		</dict>
+	</dict>
+	<key>%d hour(s) ago</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@hours@</string>
+		<key>hours</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>zd</string>
+			<key>zero</key>
+			<string></string>
+			<key>one</key>
+			<string>%d hr ago</string>
+			<key>two</key>
+			<string></string>
+			<key>few</key>
+			<string></string>
+			<key>many</key>
+			<string></string>
+			<key>other</key>
+			<string>%d hrs ago</string>
+		</dict>
+	</dict>
+    <key>%d comment(s)</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@comments@</string>
+        <key>comments</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>zero</key>
+            <string>0 comments</string>
+            <key>one</key>
+            <string>1 comment</string>
+            <key>two</key>
+            <string></string>
+            <key>few</key>
+            <string></string>
+            <key>many</key>
+            <string></string>
+            <key>other</key>
+            <string>%d comments</string>
+        </dict>
+    </dict>
+    <key>in %d years(s)</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@years@</string>
+        <key>years</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>next year</string>
+            <key>other</key>
+            <string>in %d years</string>
+        </dict>
+    </dict>
+</dict>
+</plist>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E154a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ImportantWorkProject" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="unf-qt-xf6" id="BqE-Y4-BA4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="unf-qt-xf6">
+                    <rect key="frame" x="8" y="0.0" width="359" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fzz-TL-Kyv">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="80" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nlO-Rk-IFE"/>
+                        <outlet property="delegate" destination="-1" id="Waa-jk-ShX"/>
+                    </connections>
+                </collectionView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbC-ei-KTQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EUE-PU-ihg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="lz3-fu-zB2"/>
+                    </constraints>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JrV-i7-VzL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Buddies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2a-jt-sMh">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DbC-ei-KTQ" secondAttribute="trailing" id="0da-US-TFm"/>
+                <constraint firstItem="DbC-ei-KTQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Ts-gZ-8fG"/>
+                <constraint firstItem="unf-qt-xf6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3oL-2x-lgv"/>
+                <constraint firstItem="DbC-ei-KTQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Af-hI-NJw"/>
+                <constraint firstAttribute="trailing" secondItem="JrV-i7-VzL" secondAttribute="trailing" id="Etc-Am-uGq"/>
+                <constraint firstAttribute="trailingMargin" secondItem="unf-qt-xf6" secondAttribute="trailing" id="He1-I8-cqv"/>
+                <constraint firstItem="unf-qt-xf6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="RO7-Lk-nhH"/>
+                <constraint firstItem="JrV-i7-VzL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ykc-2O-v3r"/>
+                <constraint firstItem="JrV-i7-VzL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bxp-BC-M9J"/>
+                <constraint firstItem="DbC-ei-KTQ" firstAttribute="bottom" secondItem="JrV-i7-VzL" secondAttribute="bottom" id="r2R-C7-XRO"/>
+                <constraint firstAttribute="bottom" secondItem="unf-qt-xf6" secondAttribute="bottom" id="tZh-yu-szf"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
