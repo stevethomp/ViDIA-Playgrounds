@@ -23,14 +23,14 @@
 		74DC7A801E54D8B8006DAE0F /* airGiOSTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DC7A7F1E54D8B8006DAE0F /* airGiOSTools.framework */; };
 		74DC7A811E54D9CA006DAE0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC7A771E54D221006DAE0F /* HomeViewController.swift */; };
 		74DC7A831E54D9EA006DAE0F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DC7A781E54D221006DAE0F /* HomeViewController.xib */; };
-		74DC7A841E54D9F9006DAE0F /* HomeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC7A7B1E54D71B006DAE0F /* HomeImageCell.swift */; };
-		74DC7A851E54D9F9006DAE0F /* HomeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DC7A7C1E54D71B006DAE0F /* HomeImageCell.xib */; };
 		B0514EAC1E54C68100B3D439 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = B0514EAF1E54C68100B3D439 /* Localizable.stringsdict */; };
 		B0514EAD1E54C68100B3D439 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = B0514EAF1E54C68100B3D439 /* Localizable.stringsdict */; };
 		B070067D1E53E1510072061B /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B070067C1E53E1510072061B /* Formatters.swift */; };
 		B070067E1E53E1510072061B /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B070067C1E53E1510072061B /* Formatters.swift */; };
 		B07CE1A01E5645180072D82E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07CE19F1E5645170072D82E /* Functions.swift */; };
 		B07CE1A21E56535D0072D82E /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07FA0531E4D19C2002C7758 /* CustomSegmentControl.swift */; };
+		B07CE1A41E5659600072D82E /* HomeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC7A7B1E54D71B006DAE0F /* HomeImageCell.swift */; };
+		B07CE1A51E5659600072D82E /* HomeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DC7A7C1E54D71B006DAE0F /* HomeImageCell.xib */; };
 		B07FA0541E4D19C2002C7758 /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07FA0531E4D19C2002C7758 /* CustomSegmentControl.swift */; };
 		B0A03FBD1E557EE700ACEB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74041C1F1E4B92EF003C47EA /* Assets.xcassets */; };
 		B0A03FBF1E5581F100ACEB96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A03FBE1E5581F100ACEB96 /* Constants.swift */; };
@@ -289,9 +289,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DC7A851E54D9F9006DAE0F /* HomeImageCell.xib in Resources */,
 				B0514EAD1E54C68100B3D439 /* Localizable.stringsdict in Resources */,
 				B0A03FBD1E557EE700ACEB96 /* Assets.xcassets in Resources */,
+				B07CE1A51E5659600072D82E /* HomeImageCell.xib in Resources */,
 				74DC7A831E54D9EA006DAE0F /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,9 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07CE1A21E56535D0072D82E /* CustomSegmentControl.swift in Sources */,
+				B07CE1A41E5659600072D82E /* HomeImageCell.swift in Sources */,
 				B0A03FC01E55824C00ACEB96 /* Constants.swift in Sources */,
 				B070067E1E53E1510072061B /* Formatters.swift in Sources */,
-				74DC7A841E54D9F9006DAE0F /* HomeImageCell.swift in Sources */,
 				74DC7A811E54D9CA006DAE0F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

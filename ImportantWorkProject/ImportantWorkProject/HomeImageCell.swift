@@ -16,8 +16,6 @@ class HomeImageCell: UICollectionViewCell {
 
         backgroundColor = .lightGray
         layer.cornerRadius = 3.0
-//        imageView.layer.masksToBounds = false
-//        imageView.layer.shadowOpacity = 1.0
     }
 
     func configure(with image: UIImage) {
