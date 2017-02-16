@@ -1,12 +1,12 @@
 First steps
-1. Have a project
-2. Save as workspace, this makes it simpler to give playground access to files
-3. File -> New Target -> Cocoa Touch Framework
-	- this is needed to get your files in your playgrounds
-4. Add files to framework. Add Functions
-5. Build
+Have a project
+Save as workspace, this makes it simpler to give playground access to files
+File -> New Target -> Cocoa Touch Framework
+This is needed to get your files in your playgrounds
+Add files to framework. Add Functions
+Build
 
-Main
+Main.playground
 1.
 import ImportantWorkProjectPlayground
 
@@ -18,7 +18,11 @@ sayHello()
 3.
 @testable import ImportantWorkProjectPlayground
 
-Home
+Formatters
+Useful, you can quickly change and test out
+
+
+View Controller
 
 1.
 @testable import ImportantWorkProjectPlayground
@@ -40,4 +44,27 @@ let homeVC = HomeViewController(nibName: nil, bundle: Bundle.projectFramework)
 4. Home View Controller
         if let image = UIImage(named: name, in: Bundle(for: type(of: self)), compatibleWith: nil) {
 
-^ I don't like this.
+^ Need to do this for any resources loading
+
+Custom
+1.
+Look at the control, and it’s even animating and receiving events!
+What if we want to catch them?
+
+2.
+*paste* 
+// Get actions
+class Receiver {
+    @objc func didSelectValue(sender: CustomSegmentControl) {
+        print("Tapped segment \(sender.selectedSegmentIndex)")
+    }
+}
+let receiver = Receiver()
+custom.addTarget(receiver, action: #selector(Receiver.didSelectValue(sender:)), for: .valueChanged)
+
+3.
+Play with animationTime, backgroundColor
+
+4.
+I have PlaygroundSupport file, something just for the playground. and you can see I have a convenience view to create a view that’s iOS size. *paste* 8
+
