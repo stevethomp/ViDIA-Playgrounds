@@ -1,17 +1,16 @@
-theme: Fira, 0
 build-lists: true
 
-## Playgrounds in Your Projects
+## **Playgrounds in Your Projects**
 
 ![inline](105092-dog-running-on-merry-go-round-0XON.gif)
 
-#### Steven Thompson
+#### **Steven Thompson**
 
 ^ Hello! My name is Steven, I'm going to talk very quickly about playgrounds!
 
 ---
 
-### What's a Playground?
+### **What's a Playground?**
 
 ![inline](Swift%20A%20New%20Programming%20Language%20Introduced%20by%20Apple%20For%20iOS%20and%20OS%20X%20Development.jpg)
 
@@ -19,7 +18,7 @@ build-lists: true
 
 ---
 
-### Why is this useful for us?
+### **Why is this useful for us?**
 
 - Playgrounds quickly show you the results of your code
 - Playgrounds can `import` frameworks and other resources
@@ -37,7 +36,7 @@ build-lists: true
 
 ---
 
-## Tips 
+## **Tips** 
 
 - @testable only gives you access to `public` and `internal` code.
 - Don't create a test suite in a Playground
@@ -45,7 +44,7 @@ build-lists: true
 
 ---
 
-## Thank you!
+## **Thank you!**
 
 #### @stevethomp
 #### https://github.com/stevethomp/ViDIA-Playgrounds

@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        edgesForExtendedLayout = []
+
         collectionView.register(HomeImageCell.self)
     }
 }
